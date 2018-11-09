@@ -2,7 +2,12 @@
   "name": "google-it",
   "version": "0.1.0",
   "private": true,
+  "homepage" : "https://peteriscaurs.github.io/google-it/",
   "dependencies": {
+    "mdbreact": "^4.8.2",
+    "mobx": "^5.6.0",
+    "mobx-react": "^5.3.6",
+    "mobx-state-tree": "^3.7.1",
     "react": "^16.6.1",
     "react-dom": "^16.6.1",
     "react-scripts": "2.1.1"
@@ -11,7 +16,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -21,5 +28,8 @@
     "not dead",
     "not ie <= 11",
     "not op_mini all"
-  ]
+  ],
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
+  }
 }
